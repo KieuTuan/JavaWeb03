@@ -1,7 +1,5 @@
 package demomydate;
 
-import java.util.Scanner;
-
 public class MyDate {
     private int day;
     private int month;
