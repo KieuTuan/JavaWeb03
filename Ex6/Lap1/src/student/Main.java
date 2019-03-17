@@ -3,6 +3,11 @@ package student;
 import java.util.Scanner;
 
 public class Main {
+    private static void clearScreen() {
+        for (int i = 0; i < 50; i++)
+            System.out.println();
+    }
+    
     private static int menu(Scanner input) {
         System.out.println("---MENU---");
         System.out.println("1. List");
@@ -11,6 +16,7 @@ public class Main {
         System.out.println("4. Exit\n");
         System.out.print("Nhập lựa chọn của bạn: ");
         int choose = Integer.parseInt(input.nextLine());
+        clearScreen();
         return choose;
     }
     
@@ -26,6 +32,7 @@ public class Main {
             else if(choose == 2) {
                 System.out.print("Nhập tên sinh viên muốn tìm kiếm: ");
                 stm.search(input.nextLine());
+                clearScreen();
             }
             else {
                 Student st = new Student();
@@ -36,6 +43,7 @@ public class Main {
                 System.out.print("Nhập tuổi: ");
                 st.setAge(Integer.parseInt(input.nextLine()));
                 stm.add(st);
+                clearScreen();
             }
         }
     }
