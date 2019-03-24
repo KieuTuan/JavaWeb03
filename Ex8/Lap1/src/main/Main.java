@@ -11,10 +11,10 @@ public class Main {
         EmployeeManager epm = new EmployeeManager();
         int c1, c2;
         while(true) {
-            c1 = menu.printMenu();
+            c1 = menu.printMenu(input);
             if(c1 < 1 || c1 > 2)
                 return;
-            c2 = menu.display();
+            c2 = menu.display(input);
             if(c2 < 1 || c2 > 3)
                 return;
             if(c1 == 1) {

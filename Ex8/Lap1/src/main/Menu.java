@@ -3,9 +3,7 @@ package main;
 import java.util.Scanner;
 
 public class Menu{
-    private Scanner input = new Scanner(System.in);
-    
-    public int display() {
+    public int display(Scanner input) {
         System.out.println("---Menu_Lv2--");
         System.out.println("1. Add.");
         System.out.println("2. Show.");
@@ -16,7 +14,7 @@ public class Menu{
         return c;
     }
     
-    public int printMenu() {
+    public int printMenu(Scanner input) {
         System.out.println("---Menu------");
         System.out.println("1. Student.");
         System.out.println("2. Employee.");
