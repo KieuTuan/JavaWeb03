@@ -1,0 +1,43 @@
+body {
+  align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: green;
+}
+
+span {
+  font-size: 20px;
+}
+
+p {
+  color: #0000CC;
+}
+
+.a {
+  margin-left: 400px;
+  width: 600px;
+  height: 630px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.b {
+  color: red;
+}
+
+.c {
+  background-color: #CCCCCC ;
+}
+
+.p1 {
+  margin-left: 30%;
+}
+
+.p2 {
+  margin-left: 40%;
+}

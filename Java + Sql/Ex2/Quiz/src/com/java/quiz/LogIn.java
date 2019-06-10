@@ -14,7 +14,7 @@ public class LogIn {
     private Statement stat;
     private ResultSet rs;
     
-    public void LogInDB(Scanner input, Connection conn) {
+    public int LogInDB(Scanner input, Connection conn) {
         System.out.print("Email: ");
         email = input.nextLine();
         System.out.print("Password: ");
@@ -35,6 +35,7 @@ public class LogIn {
                 }
             }
         }
+        return getId(conn);
     }
     
     private boolean CheckEmail(Connection conn) {
@@ -61,5 +62,18 @@ public class LogIn {
             Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
         }
         return false;
+    }
+    
+    private int getId(Connection conn) {
+        try {
+            stat = conn.createStatement();
+            rs = stat.executeQuery("SELECT * FROM STUDENTS");
+            while (rs.next())               
+                if(rs.getString("EMAIL").equals(email) && rs.getString("PASS").equals(pass))
+                    return rs.getInt("ID");
+        } catch (SQLException ex) {
+            Logger.getLogger(LogIn.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return 0;
     }
 }

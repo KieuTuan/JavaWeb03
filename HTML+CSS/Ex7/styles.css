@@ -1,0 +1,56 @@
+h1 {
+  color: #0c99c1;
+}
+
+.main {
+  margin-left: 13%;
+  margin-right: 13%;
+  height: 630px;
+  display: flex;
+}
+
+.hoa {
+  width: 320px;
+  height: 600px;
+  background-image: url(hoa.jpg);
+  display: inline;
+}
+
+.a {
+  margin-left: 10px;
+}
+
+.a h1 {
+  margin-left: 50px;
+}
+
+.b {
+  color: white;
+  background-color: #0c99c1;
+  width: 80px;
+}
+
+.a li {
+  margin-left: 30px;
+}
+
+.c li {
+  list-style-type: square;
+}
+
+.d li {
+  list-style-type: circle;
+}
+
+.e {
+  background-color: #ffcbcb;
+  color: #0c99c1;
+}
+
+.f {
+  color: red;
+}
+
+a {
+  text-decoration: underline;
+}

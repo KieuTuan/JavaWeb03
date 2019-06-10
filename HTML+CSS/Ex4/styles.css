@@ -1,0 +1,29 @@
+body {
+  align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.a {
+  margin-left: 280px;
+  width: 800px;
+  height: 630px;
+  background-image: url(hoa.jpg);
+}
+
+.b {
+  color: #008888;
+}
+
+.c {
+  background-color: #008888;
+  color: white;
+}

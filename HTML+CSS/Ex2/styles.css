@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+hr {
+  width: 300px;
+}
+
+p {
+  line-height: 1;
+}
+
+.a {
+  color: green;
+}
+
+.a1 {
+  color: #0000FF;
+}
+
+.b {
+  color: #FF3399;
+  background-color: #FECFFD;
+}
+
+.c {
+  background-color: #FFFFCC;
+  text-align: center;
+}
+
+.c1 {
+  color: blue;
+}
+
+.c2 {
+  color: red;
+}
+
+.c3 {
+  color: green;
+}

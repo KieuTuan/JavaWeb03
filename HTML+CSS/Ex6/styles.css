@@ -1,0 +1,48 @@
+.a {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.b {
+  width: 98%;
+  border: 5px;
+  margin-bottom: 30px;
+  border-color: #ffa323;
+  border-style: solid;
+}
+
+.c {
+  margin: 0.5%;
+  width: 98%;
+  text-align: center;
+  line-height: 0.5;
+  color: #ffa323;
+  border-color: #ffa323;
+  border: 2px;
+  border-style: solid;
+}
+
+.d {
+  color: red;
+  font-size: 50px;
+}
+
+.e {
+  margin-top: 30px;
+  background-color: #ffa323;
+  color: white;
+  text-align: right;
+  font-size: 20px;
+}
+
+.f {
+  text-align: right;
+}
+
+.g {
+  color: #ff487e;
+}
+
+.h {
+  background-color: #5bd1d7
+}
