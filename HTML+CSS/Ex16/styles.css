@@ -1,0 +1,74 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header {
+  border: 1px solid #313131;
+}
+
+header img {
+  width: 15%;
+}
+
+header div {
+  color: #112f91;
+  display: inline;
+}
+
+header span {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+header .hd1 {
+  background-image: url(tuong.jpg);
+  font-size: 100px;
+}
+
+header .hd2 {
+  font-size: 100px;
+}
+
+header .hd3 {
+  font-size: 70px;
+}
+
+header .hd4 {
+  font-size: 40px;
+}
+
+header .hd5 {
+  margin-left: 19%;
+}
+
+.menu {
+  width: 30%;
+  float: left;
+}
+
+.menu ul li {
+  width: 100%;
+}
+
+.menu li {
+  list-style-type: circle;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 69%;
+  float: right;
+  border: 1px solid #313131;
+  border-top: 0;
+}
+
+.main .title {
+  background-color: #112f91;
+  color: white;
+  margin: 0;
+}
+
+.group h3 {
+  color: #112f91;
+}

@@ -1,0 +1,14 @@
+button {
+  width: 15%;
+}
+
+input {
+  width: 40%;
+}
+
+#main {
+  width: 40%;
+  margin: 0 30%;
+  padding: 1%;
+  border: 1px solid black;
+}

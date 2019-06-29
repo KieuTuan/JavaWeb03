@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+img {
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+h1 {
+  color: #CC6600;
+  margin-right: 5%;
+}
+
+table{
+  border-collapse: collapse;
+  width: 95%;
+}
+
+table, th, td {
+  border: 1px solid #000000;
+}
+
+thead {
+  background-color: #CC6600;
+  color: #FFF;
+}
+
+#contener {
+  margin: 0 30%;
+  width: 40%;
+  background-color: #FFEDCA;
+  float: left;
+  border: 1px solid black;
+}
+
+.right {
+  float: right;
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.th-left {
+  width: 10%;
+}
+
+.odd {
+  background-color: #FFF;
+}

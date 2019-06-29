@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Máy tính</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1>Javascript căn bản</h1>
+      <h2>Máy tính đơn giản</h2>
+      <label>Số thứ 1: </label>
+      <input id="number_1"/>
+      <button type="submit" onclick="calc('+')">+</button>
+      <button type="submit" onclick="calc('-')">-</button><br/><br/>
+      <label>Số thứ 2: </label>
+      <input id="number_2">
+      <button type="submit" onclick="calc('*')">*</button>
+      <button type="submit" onclick="calc('/')">/</button><br/><br/>
+      <label>Kết quả : </label>
+      <input id="res" value="NaN" readonly/><br/><br/>
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
