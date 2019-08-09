@@ -35,40 +35,11 @@
             </thead>
             <tbody>
                 <%                        
-                    //StudentModel model = new StudentModel();
-                    //ArrayList<Student> list = model.getStudents();
-                    //String list = model.getStudents();
-                    //out.println(list);
-                    //for (Student item : list) {
-                    
-                    
-                    
-                    Class.forName("com.mysql.cj.jdbc.Driver");
-                    out.println("1");
-                    String conStr = "jdbc:mysql://localhost:3306/sinhvien";
-                    out.println("2");
-                    String user = "root";
-                    out.println("3");
-                    String pass = "root";
-                    out.println("4");
-                    Connection conn  = DriverManager.getConnection(conStr, user, pass);
-                    out.println("5");
-                        //conn = db.getConnect();
-            //            String sql = "SELECT * FROM INFO";
-            //            PreparedStatement pstmt = conn.prepareStatement(sql);
-            //            ResultSet rs = pstmt.executeQuery();
-            //            ArrayList<Student> list = new ArrayList<>();
-            //            while (rs.next()) {
-            //                Student s = new Student();
-            //                s.setId(rs.getInt("id"));
-            //                s.setName(rs.getString("name"));
-            //                s.setFaculty(rs.getString("faculty"));
-            //                s.setClassroom(rs.getString("classroom"));
-            //                list.add(s);
-            //            }
-            //            return list;
+                    StudentModel model = new StudentModel();
+                    ArrayList<Student> list = model.getStudents();
+                    for (Student item : list) {
                 %>
-                <%--
+
                 <tr>
                     <th scope="row"><%= item.getId() %></th>
                     <td><%= item.getName() %></td>
@@ -80,7 +51,6 @@
                     </td>
                 </tr>
                 <% } %>
-                --%>
             </tbody>
         </table>
         

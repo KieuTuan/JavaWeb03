@@ -11,33 +11,27 @@ import java.util.logging.Logger;
 
 public class StudentModel {
 
-    //private final DBConnector db = new DBConnector();
+    private final DBConnector db = new DBConnector();
     private Connection conn;
     
-    public String getStudents() {
+    public ArrayList getStudents() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            String conStr = "jdbc:mysql://localhost:3306/sinhvien";
-            String user = "root";
-            String pass = "root";
-            conn  = DriverManager.getConnection(conStr, user, pass);
-            //conn = db.getConnect();
-            return "yes";
-//            String sql = "SELECT * FROM INFO";
-//            PreparedStatement pstmt = conn.prepareStatement(sql);
-//            ResultSet rs = pstmt.executeQuery();
-//            ArrayList<Student> list = new ArrayList<>();
-//            while (rs.next()) {
-//                Student s = new Student();
-//                s.setId(rs.getInt("id"));
-//                s.setName(rs.getString("name"));
-//                s.setFaculty(rs.getString("faculty"));
-//                s.setClassroom(rs.getString("classroom"));
-//                list.add(s);
-//            }
-//            return list;
+            conn = db.getConnect();
+            String sql = "SELECT * FROM INFO";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            ArrayList<Student> list = new ArrayList<>();
+            while (rs.next()) {
+                Student s = new Student();
+                s.setId(rs.getInt("id"));
+                s.setName(rs.getString("name"));
+                s.setFaculty(rs.getString("faculty"));
+                s.setClassroom(rs.getString("classroom"));
+                list.add(s);
+            }
+            return list;
         } catch (ClassNotFoundException | SQLException ex) {
-            return "no";
+            return null;
         }
     }
 
