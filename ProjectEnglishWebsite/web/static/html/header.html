@@ -1,0 +1,55 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+        <nav class="navbar navbar-expand-md navbar-dark" id="header">
+            <div class="container">
+                <a class="navbar-brand" href="index.htm">
+                    <img class="logo" src="<c:url value="/public/images/head/actlogo.png"/>" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="/ProjectEnglishWebsite/"><button type="button" class="btn btn-outline-secondary">Tiếng Anh Online</button></a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-secondary">Lộ Trình Học</button>
+                        </li>
+                        -->
+                    </ul>
+                    <c:if test="${user == null}">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                Log In
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item" href="/ProjectEnglishWebsite/login">Login</a>
+                                <a class="dropdown-item" href="/ProjectEnglishWebsite/signup">Sign up</a>
+                                <a class="dropdown-item" href="#!">Forgot</a>
+                            </div>
+                        </div>
+                    </c:if>
+                    <c:if test="${user != null}">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle"
+                                    type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                ${user}
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <a class="dropdown-item" href="/ProjectEnglishWebsite/logout">Logout</a>
+                                <a class="dropdown-item" href="#!">Forgot</a>
+                            </div>
+                        </div>
+                    </c:if>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="banner" src="<c:url value="/public/images/banner/Python_banner.png"/>">
+                </div>
+            </div>
+        </div>

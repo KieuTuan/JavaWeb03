@@ -1,0 +1,305 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 4, 2019, 6:40:55 PM
+    Author     : Kieu Anh Tuan
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: #99CCFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.header .wrapper {
+    margin: auto;
+    width: 1200px;
+}
+.header .wrapper .title {
+    font-family: Cash_Currentcy;
+    font-size: 50px;
+    text-align: center;
+}
+.header .wrapper .welcome {
+    color:crimson;
+    font-size: 18px;
+    text-align: center;
+
+}
+.header a:hover {
+    text-decoration: none;
+}
+.login, .home, .admin_manager {
+    margin-top: 30px;
+}
+.login .wrapper {
+    width:500px;
+    margin:auto;
+    padding:10px;
+}
+.home .wrapper {
+    margin:auto;
+    max-width:1000px;
+}
+.home .wrapper .image {
+    /*float:left;*/
+    width:200px;
+    height: 200px;
+}
+.home .wrapper .name {
+    /*float:left;*/
+    /*margin-left: 20px;*/
+    max-width: 380px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color:black;
+}
+.home .wrapper .box {
+    max-width: 230px;
+    float:left;
+    /*margin-right: 10px;*/
+}
+.home .wrapper .box:last-child {
+    margin-right: 0px !important;
+}
+.home .wrapper .box:hover {
+    background: #D1D1D1;
+}
+.home .wrapper .box a:link, .home .wrapper .box a:visited {
+    text-decoration: none;
+    color:black;
+}
+.home .wrapper .box a:hover, .home .wrapper .box a:focus {
+    text-decoration: underline;
+    color:#FF6600;
+}
+.clear-fix {
+    content: " ";
+    clear:both;
+    display: table;
+}
+.admin_manager .wrapper {
+    width: 1200px;
+    margin:auto;
+}
+.admin_manager .wrapper .admin_menu {
+    float:left;
+    max-width: 600px;
+}
+.admin_manager .box {
+    width: 540px;
+    color:black;
+}
+.admin_manager .box:hover {
+    background: #D1D1D1;
+}
+.admin_manager .box .image {
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+.admin_manager .box .name {
+    float:left;
+    max-width: 320px;
+    font-size: 30px;
+    /*height: 200px;*/
+    vertical-align:middle;
+    line-height: 100px;
+    margin-left: 30px;
+}
+.admin_manager .wrapper .admin_account {
+    float:right;
+    max-width: 48%;
+    /*margin-left: 20px;*/
+    width: 48%;
+}
+.admin_manager .register_manager {
+    max-width: 800px;
+    margin:auto;
+    position: relative;
+}
+.admin_manager .register_details {
+    max-width:634px;
+    margin:auto;
+}
+.admin_manager .library_manager {
+    max-width:572px;
+    margin:auto;
+}
+.img_cover {
+    float:left;
+    width: 500px;
+    height: 100%;
+}
+.details {
+    float:left;
+}
+.extra {
+    position: absolute;
+    top:0px;
+    right:-110px;
+    width: 300px;
+}
+.add_category_form {
+    height: 220px;
+    width:500px;
+    margin: auto;
+    position: relative;
+}
+.background_1, .background_2, .background_3, .background_4, .background_5, .background_6 {
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.add_admin_account_form {
+   /* position:fixed;*/
+    width:500px;
+    height: 400px;
+    background: #fff;
+    padding:15px;
+    position: relative;
+}
+.add_admin_menu_form {
+    width:500px;
+    height: 418px;
+    background: #fff;
+    padding:15px;
+    position: relative;
+}
+
+.add_admin_permission_form {
+    width:500px;
+    height: 271px;
+    background: #fff;
+    padding:15px;
+    position: relative;
+}
+.add_menu_form {
+    width:500px;
+    height: 483px;
+    background: #fff;
+    padding:15px;
+    position: relative;
+}
+.all_permission {
+    background: #fff;
+    padding: 15px;
+    position: absolute;
+    width:272px;
+    right:-272px;
+    top:0px;
+}
+.a_close, .b_close, .c_close, .d_close, .e_close, .f_close {
+    width:32px;
+    height: 32px;
+    top:-16px;
+    right: -16px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
+.account_edit, .menu_edit, .permission_edit {
+    width: 500px;
+    margin:auto;
+    margin-top: 30px;
+    position: relative;
+}
+
+/*post management*/
+.form_add {
+    /*margin:auto;*/
+    width:1160px;
+    margin-bottom: 20px;
+}
+.form_add td {
+    font-weight: bold;
+    font-size: 20px;
+}
+.form_add form {
+    margin-bottom: 30px;
+}
+
+/*post view css body*/
+.body-left {
+    float:left;
+    width:900px;
+    font-family: SegoeUI;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.body-left h1 {
+    
+    font-size: 30px;
+    color: #14b1b3;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.body-left h3 {
+    color: #14b1b3;
+    font-weight: normal;
+}
+.body-left a:link, .body-left a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.body-left a:hover, .body-left:focus {
+    text-decoration: underline;
+}
+.body-left .date {
+    color: #c7c7c7;
+    font-size: 14px;
+    margin-top: 0px;
+}
+.body-left .main_content {
+    text-align: justify;
+    margin-top: 15px;
+}
+.body-left .img {
+    float:left;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #28a0f4;
+    margin-right: 15px;
+}
+.wrapper_extra {
+    max-width: 398px;
+    margin: auto;
+}
+/*CSS document*/
+@font-face {
+	font-family: SegoeUI;
+	src: url(../fonts/segoeui.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: SegoeUILight;
+	src: url(../fonts/segoeuil.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: SegoeUIBold;
+	src: url(../fonts/segoeui.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: SegoeUIItalic;
+	src: url(../fonts/segoeuii.ttf);
+	font-weight: normal;
+	font-style: italic;
+}

@@ -1,0 +1,18 @@
+SMAP
+index_jsp.java
+JSP
+*S JSP
+*F
++ 0 index.jsp
+WEB-INF/jsp/index.jsp
++ 1 header.html
+resourcesaaa/html/header.html
++ 2 footer.html
+resources/html/footer.html
+*L
+1,17:50
+1#1,25:67
+17#0,35:92
+1#2,5:127
+51#0,3:132
+*E
